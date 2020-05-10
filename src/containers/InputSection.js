@@ -34,7 +34,7 @@ class InputSection extends Component {
         <Label for="default filter">Filter by default condition</Label>
         <Button
           size="sm"
-          className="w-25 ml-2"
+          className="btn-form ml-2"
           color="info"
           onClick={this.props.defaultFilter}
         >
@@ -65,11 +65,11 @@ class InputSection extends Component {
           </InputGroup>
         </div>
         <div className="custom-filter-section">
-          <div className="d-flex w-100 align-items-baseline">
+          <div className="d-flex w-100 align-items-center">
             <Label for="custom filter">Filter by above condition</Label>
             <Button
               size="sm"
-              className="w-25 ml-2"
+              className="btn-form custom-button"
               color="info"
               onClick={() => this.props.customFilter({ minAge, maxAge })}
             >
@@ -79,7 +79,7 @@ class InputSection extends Component {
 
           <Button
             size="sm"
-            className="w-25"
+            className="btn-form"
             color="warning"
             onClick={this.props.resetData}
           >

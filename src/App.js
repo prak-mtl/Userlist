@@ -8,7 +8,7 @@ function AuthButton(props) {
   return props.isAuthenticated ? (
     <div className="sign-out">
       Welcome!{" "}
-      <Button size="sm" className="w-25" color="primary" onClick={props.logOut}>
+      <Button size="sm" className="sign-out-button" color="primary" onClick={props.logOut}>
         Sign out
       </Button>
     </div>
